@@ -6,7 +6,7 @@ import {
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 
-function App() {
+export default function App() {
   return <Router>
     <Switch>
       <Route path="/movie/:id">
@@ -19,4 +19,3 @@ function App() {
   </Router>;
 }
 
-export default App;
