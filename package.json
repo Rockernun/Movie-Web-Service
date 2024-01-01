@@ -40,5 +40,9 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://Rockernun.github.io/Movie-Web-Service"
+  "homepage": "https://Rockernun.github.io/Movie-Web-Service",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
+  }
 }
