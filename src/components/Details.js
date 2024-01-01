@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Details({ title, src, description, genres, url, rating }) {
+export default function Details({ title, src, description, genres, url, rating }) {
   return (
     <div>
       <h1>
@@ -9,8 +9,8 @@ function Details({ title, src, description, genres, url, rating }) {
         </a>
       </h1>
       <img src={src} alt={title} />
-      <h4>description</h4>
-      <p /> {description}
+      <h3>Description</h3>
+      <p>{description}</p>
       <h4>Movie Rating: {rating}</h4>
       <div>
         <h4>genres</h4>
@@ -20,7 +20,6 @@ function Details({ title, src, description, genres, url, rating }) {
           ))}
         </ul>
       </div>
-      <br />
       <hr />
       <a href={url} target="_blank">
         Go to the site...
@@ -30,5 +29,3 @@ function Details({ title, src, description, genres, url, rating }) {
     </div>
   );
 }
-
-export default Details;
